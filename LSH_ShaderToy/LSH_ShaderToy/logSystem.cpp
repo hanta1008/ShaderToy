@@ -16,3 +16,8 @@ void showWndCtrlInfo(WndCtrl* wndCtrl)
 
 	printf("ID : %d\n", ID);
 }
+
+void gitTest()
+{
+	//±êÇãºê Ä¿¹Ô Å×½ºÆ®¿ë
+}
