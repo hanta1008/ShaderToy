@@ -11,11 +11,22 @@
 #include <CommCtrl.h>
 #pragma comment(lib, "comctl32")
 
+//OpenGL 헤더 파일
+#include <GL/glew.h>
+#include <GL/wglew.h>
+
+#pragma comment(lib, "opengl32.lib")
+#pragma comment(lib, "glew32.lib")
+#pragma comment(lib, "glfw3dll.lib")
+
 // C 런타임 헤더 파일입니다.
+#include <stdio.h>
+#include <stdarg.h>
 #include <stdlib.h>
-#include <malloc.h>
-#include <memory.h>
-#include <tchar.h>
+#include <string.h>
+//#include <malloc.h>
+//#include <memory.h>
+//#include <tchar.h>
 
 #include "logSystem.h"
 
@@ -82,6 +93,7 @@ HWND createWndStatic(int posx, int posy, int width, int height,
 HWND createWndButton(int posx, int posy, int width, int height,
 	WND_COLOR_METHOD methodColor, WND_UPDATE_METHOD methodUpdate, const char* str);
 void wndButtonUpdate(HWND hwnd);
+void showDlgOpenGL(HWND hwnd);
 
 // --------------------------------------
 // ctrl - check box

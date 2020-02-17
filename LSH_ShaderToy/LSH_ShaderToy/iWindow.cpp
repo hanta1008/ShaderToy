@@ -187,6 +187,12 @@ void wndButtonUpdate(HWND hwnd)
 	showLog("wndButtonUpdate()");
 }
 
+#include "dlgOpenGL.h"
+void showDlgOpenGL(HWND hwnd)
+{
+	showDlgOpenGL();
+}
+
 // --------------------------------------
 // ctrl - check box
 // --------------------------------------
